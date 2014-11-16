@@ -9,12 +9,18 @@
   line-height: 2em;
   vertical-align: middle;
 }
-@mixin fa-mx-stack-1x, @mixin fa-mx-stack-2x {
+@mixin fa-mx-stack-hlp {
   position: absolute;
   left: 0;
   width: 100%;
   text-align: center;
 }
-@mixin fa-mx-stack-1x { line-height: inherit; }
-@mixin fa-mx-stack-2x { font-size: 2em; }
+@mixin fa-mx-stack-1x {
+  @include fa-mx-stack-hlp;
+  line-height: inherit;
+}
+@mixin fa-mx-stack-2x {
+  @include fa-mx-stack-hlp;
+  font-size: 2em;
+}
 @mixin fa-mx-inverse { color: $fa-inverse; }

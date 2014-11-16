@@ -1,20 +1,29 @@
 // Rotated & Flipped Icons
 // -------------------------
 
-@mixin fa-mx-rotate-90  { @include fa-icon-rotate(90deg, 1);  }
-@mixin fa-mx-rotate-180 { @include fa-icon-rotate(180deg, 2); }
-@mixin fa-mx-rotate-270 { @include fa-icon-rotate(270deg, 3); }
-
-@mixin fa-mx-flip-horizontal { @include fa-icon-flip(-1, 1, 0); }
-@mixin fa-mx-flip-vertical   { @include fa-icon-flip(1, -1, 2); }
-
 // Hook for IE8-9
-// -------------------------
-
-:root @mixin fa-mx-rotate-90,
-:root @mixin fa-mx-rotate-180,
-:root @mixin fa-mx-rotate-270,
-:root @mixin fa-mx-flip-horizontal,
-:root @mixin fa-mx-flip-vertical {
+@mixin fa-mx-ie-hook {
   filter: none;
+}
+
+@mixin fa-mx-rotate-90 {
+  @include fa-icon-rotate(90deg, 1);
+  @at-root :root & { @include fa-mx-ie-hook; }
+}
+@mixin fa-mx-rotate-180 {
+  @include fa-icon-rotate(180deg, 2);
+  @at-root :root & { @include fa-mx-ie-hook; }
+}
+@mixin fa-mx-rotate-270 {
+  @include fa-icon-rotate(270deg, 3);
+  @at-root :root & { @include fa-mx-ie-hook; }
+}
+
+@mixin fa-mx-flip-horizontal {
+  @include fa-icon-flip(-1, 1, 0);
+  @at-root :root & { @include fa-mx-ie-hook; }
+}
+@mixin fa-mx-flip-vertical {
+  @include fa-icon-flip(1, -1, 2);
+  @at-root :root & { @include fa-mx-ie-hook; }
 }

@@ -1,12 +1,11 @@
 /*!
- *  Font Awesome 4.2.0 by @davegandy - http://fontawesome.io - @fontawesome
+ *  Font Awesome SASS Mixin Library by @nickraptis - https://github.com/nickraptis/font-awesome-sass-mixins
+ *  based on Font Awesome 4.2.0 by @davegandy - http://fontawesome.io - @fontawesome
  *  License - http://fontawesome.io/license (Font: SIL OFL 1.1, CSS: MIT License)
  */
 
 @import "variables";
 @import "mixins";
-@import "path";
-@import "core";
 @import "larger";
 @import "fixed-width";
 @import "list";
@@ -14,4 +13,10 @@
 @import "spinning";
 @import "rotated-flipped";
 @import "stacked";
-@import "icons";
+//@import "icons";
+
+// Output CSS
+@import "path";
+@import "core";
+//@import "originals";
+@import "output";

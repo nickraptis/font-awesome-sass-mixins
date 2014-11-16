@@ -1,0 +1,25 @@
+// This file outputs most of the original FontAwesome styles.
+// Useful for testing.
+
+.#{$fa-css-prefix}-lg { @include fa-mx-lg; }
+.#{$fa-css-prefix}-2x { @include fa-mx-2x; }
+.#{$fa-css-prefix}-3x { @include fa-mx-3x; }
+.#{$fa-css-prefix}-4x { @include fa-mx-4x; }
+.#{$fa-css-prefix}-5x { @include fa-mx-5x; }
+.#{$fa-css-prefix}-fw { @include fa-mx-fw; }
+.#{$fa-css-prefix}-ul { @include fa-mx-ul; }
+.#{$fa-css-prefix}-li { @include fa-mx-li; }
+.#{$fa-css-prefix}-li.#{$fa-css-prefix}-lg { @include fa-mx-li-lg-fix; }
+.#{$fa-css-prefix}.pull-left { @include fa-mx-pull-left; }
+.#{$fa-css-prefix}.pull-right { @include fa-mx-pull-right; }
+.#{$fa-css-prefix}-spin { @include fa-mx-spin; }
+@include fa-mx-spin-keyframes;
+.#{$fa-css-prefix}-rotate-90 { @include fa-mx-rotate-90; }
+.#{$fa-css-prefix}-rotate-180 { @include fa-mx-rotate-180; }
+.#{$fa-css-prefix}-rotate-270 { @include fa-mx-rotate-270; }
+.#{$fa-css-prefix}-flip-horizontal { @include fa-mx-flip-horizontal; }
+.#{$fa-css-prefix}-flip-vertical { @include fa-mx-flip-vertical; }
+.#{$fa-css-prefix}-stack { @include fa-mx-stack; }
+.#{$fa-css-prefix}-stack-1x { @include fa-mx-stack-1x; }
+.#{$fa-css-prefix}-stack-2x { @include fa-mx-stack-2x; }
+.#{$fa-css-prefix}-inverse { @include fa-mx-inverse; }

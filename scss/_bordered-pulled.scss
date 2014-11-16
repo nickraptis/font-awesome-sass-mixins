@@ -7,10 +7,11 @@
   border-radius: .1em;
 }
 
-.pull-right { float: right; }
-.pull-left { float: left; }
-
-@mixin fa-mx {
-  &.pull-left { margin-right: .3em; }
-  &.pull-right { margin-left: .3em; }
+@mixin fa-mx-pull-right {
+  float: right;
+  margin-left: .3em;
+}
+@mixin fa-mx-pull-left {
+  float: left;
+  margin-right: .3em;
 }
