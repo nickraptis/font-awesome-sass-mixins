@@ -23,3 +23,8 @@
 .#{$fa-css-prefix}-stack-1x { @include fa-mx-stack-1x; }
 .#{$fa-css-prefix}-stack-2x { @include fa-mx-stack-2x; }
 .#{$fa-css-prefix}-inverse { @include fa-mx-inverse; }
+
+$icon-map: () !default;
+@each $name in map-keys($icon-map) {
+	.#{$name} { @include fa-mx-icon($name); }
+}
