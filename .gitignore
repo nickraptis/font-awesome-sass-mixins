@@ -1,1 +1,7 @@
+# SASS
 .sass-cache
+
+# Eclipse
+/.buildpath
+/.project
+/.settings/
